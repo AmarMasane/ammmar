@@ -1,0 +1,84 @@
+body, html {
+    height: 100%;
+    background-repeat: no-repeat; /*background-image: linear-gradient(rgb(12, 97, 33),rgb(104, 145, 162));*/
+    /*background:black;*/
+    /*background: -webkit-linear-gradient(right, #bb080e, #ef595e, #ef595e, #bb080e);*/
+    background: -webkit-linear-gradient(right, #bb080e, #f79599, #f79599, #bb080e);
+    position: relative;
+}
+#login-box {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 350px;
+    margin: 0 auto;
+    background: rgb(255,255, 255);
+    padding: 40px 20px;
+    border-radius: 17px;
+    z-index: 9999;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+#login-box .logo .logo-caption {
+	font-family: 'Poiret One', cursive;
+	color: white;
+	text-align: center;
+	margin-bottom: 0px;
+}
+    #login-box .logo .tweak {
+        color: #ff0000;
+    }
+#login-box .controls {
+	padding-top: 30px;
+}
+    #login-box .controls input {
+        background: #fff;
+        border: 0px;
+        color: black;
+        border: 1px solid #396aa5;
+        border-radius: 15px;
+}
+#login-box .controls input:focus {
+	box-shadow: none;
+}
+/*#login-box .controls input:first-child {
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}*/
+        #login-box .controls input:last-child {
+	/*border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;*/
+}
+    #login-box button.btn-custom {
+        border-radius: 15px;
+        margin-top: 8px;
+        /*background:#b1c900;*/
+        background: #014b92;
+        border-color: rgba(48, 46, 45, 1);
+        color: white;
+    }
+        #login-box button.btn-custom:hover {
+            -webkit-transition: all 500ms ease;
+            -moz-transition: all 500ms ease;
+            -ms-transition: all 500ms ease;
+            -o-transition: all 500ms ease;
+            transition: all 500ms ease;
+            background: rgba(48, 46, 45, 1);
+            /*border-color: #b1c900;*/
+            border-color: #014b92;
+        }
+#particles-js{
+  	width: 100%;
+  	height: 100%;
+  	background-size: cover;
+  	background-position: 50% 50%;
+  	position: fixed;
+  	top: 0px;
+  	z-index:1;
+}
+
+@media only screen and (max-width: 768px){
+    #login-box {
+        min-width: 85% !important;
+    }
+}
